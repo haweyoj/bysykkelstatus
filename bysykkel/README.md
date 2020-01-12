@@ -8,7 +8,7 @@ Maven versjon 3+
 ## Kjøring
 Last ned prosjektet, unzip filen og kjør følgende kommandoer i terminalen: 
 ``` 
-$ cd bysykkelstatus-master/bysykkel
+$ cd bysykkelstatus-master
 $ mvn clean install
 $ java -jar target/bysykkel-1.jar
 ```
