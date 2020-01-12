@@ -17,13 +17,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>2.17</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.github.ngeor</groupId>
-                            <artifactId>checkstyle-rules</artifactId>
-                            <version>1.0.8</version>
-                        </dependency>
-                    </dependencies>
                     <configuration>
                         <archive>
                             <manifest>
@@ -31,10 +24,17 @@
                               <mainClass>bysykkel.App</mainClass>
                             </manifest>
                           </archive>
-
                         <configLocation>com/github/ngeor/checkstyle.xml</configLocation>
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.github.ngeor</groupId>
+                            <artifactId>checkstyle-rules</artifactId>
+                            <version>1.0.8</version>
+                        </dependency>
+                    </dependencies>
+                    
                 </plugin>
             </plugins>
         </pluginManagement>
