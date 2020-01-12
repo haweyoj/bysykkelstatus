@@ -10,5 +10,5 @@ Last ned prosjektet, unzip filen og kjør følgende kommandoer i terminalen:
 ``` 
 $ cd bysykkelstatus-master
 $ mvn clean install
-$ java -jar target/bysykkel-1.jar
+$ mvn exec:java -Dexec.mainClass="bysykkel.App
 ```
